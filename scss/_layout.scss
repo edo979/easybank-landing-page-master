@@ -1,0 +1,15 @@
+.grid-container {
+  display: grid;
+  width: min(100%, 1440px);
+  margin-inline: auto;
+
+  grid-template-columns: minmax(1rem, 5vw) repeat(12, 1fr) minmax(1rem, 5vw);
+}
+
+.hero_text-content {
+  grid-column: 2 / 8;
+}
+
+.hero_img {
+  grid-column: 8 / 14;
+}
