@@ -1,0 +1,20 @@
+.main-nav {
+  // Layout:
+
+  &_logo {
+    grid-column: 2 / 5;
+  }
+
+  &_list {
+    grid-column: 5 / 11;
+    justify-self: center;
+  }
+
+  &_btn {
+    grid-column: 11 / 14;
+  }
+
+  &_toggle {
+    display: none;
+  }
+}
