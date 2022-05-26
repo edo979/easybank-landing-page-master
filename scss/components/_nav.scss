@@ -1,20 +1,50 @@
 .main-nav {
-  // Layout:
+  align-items: center;
 
   &_logo {
-    grid-column: 2 / 5;
+    grid-column: 2;
+    grid-row: 1 / 2;
   }
 
   &_list {
-    grid-column: 5 / 11;
-    justify-self: center;
+    display: none;
   }
 
   &_btn {
-    grid-column: 11 / 14;
+    display: none;
   }
 
   &_toggle {
-    display: none;
+    grid-column: 2;
+    grid-row: 1 / 2;
+    justify-self: right;
+
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+
+    background-color: transparent;
+
+    background-image: url('../images/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
+
+  // &_logo {
+  //   grid-column: 2 / 5;
+  // }
+
+  // &_list {
+  //   grid-column: 5 / 11;
+  //   justify-self: center;
+  // }
+
+  // &_btn {
+  //   grid-column: 11 / 14;
+  // }
+
+  // &_toggle {
+  // }
 }
