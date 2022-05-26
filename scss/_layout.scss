@@ -7,6 +7,14 @@
       25px,
       5vw
     );
+
+  > * {
+    grid-column: 2;
+  }
+}
+
+.hero_img {
+  grid-row: 1;
 }
 
 @include mq {
