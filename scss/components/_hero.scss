@@ -1,8 +1,13 @@
 .hero {
+  &_text-content {
+    width: $container-width;
+    margin-inline: auto;
+  }
+
   &_img {
     &::after {
       content: '';
-      position: relative;
+      //position: absolute;
       display: block;
 
       width: 100%;
@@ -17,16 +22,20 @@
       background-repeat: no-repeat;
       background-position: center -110px, 0px -50px;
       background-size: cover;
-
-      outline: 1px solid red;
     }
   }
 }
 
 @include mq {
   .hero {
+    &_text-content {
+      grid-column: 2 / 8;
+      width: 100%;
+    }
+
     &_img {
       position: relative;
+      grid-column: 8 / end;
 
       &::after {
         position: absolute;
@@ -35,10 +44,8 @@
         background-image: url('../images/image-mockups.png'),
           url('../images/bg-intro-desktop.svg');
         background-repeat: no-repeat;
-        background-position: 120px -110px, -55px -200px;
+        background-position: 120px -110px, -50px -200px;
         background-size: cover;
-
-        outline: 1px solid red;
       }
     }
   }

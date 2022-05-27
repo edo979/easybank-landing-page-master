@@ -1,3 +1,5 @@
+$container-width: max(82vw, 325px);
+
 @mixin mq {
   @media (min-width: 768px) {
     @content;

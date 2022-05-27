@@ -1,10 +1,10 @@
 .container {
   margin-inline: auto;
-  width: max(82vw, 325px);
+  width: $container-width;
 }
 
 .sm-fluid-container {
-  width: min(100%, 500px);
+  width: 100%;
 }
 
 .flex {
@@ -22,14 +22,6 @@
 
     grid-template-columns: minmax(1rem, 5vw) repeat(12, 1fr) minmax(1rem, 5vw);
     overflow-inline: hidden;
-  }
-
-  .hero_text-content {
-    grid-column: 2 / 8;
-  }
-
-  .hero_img {
-    grid-column: 8 / end;
   }
 
   .content_header {
