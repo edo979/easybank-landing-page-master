@@ -3,6 +3,10 @@
   width: max(82vw, 325px);
 }
 
+.sm-fluid-container {
+  width: min(100%, 500px);
+}
+
 .flex {
   display: flex;
   flex-direction: var(--direction, row);
