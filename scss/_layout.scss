@@ -48,11 +48,16 @@
     grid-column: 2 / -2;
   }
 
+  .box-img-top {
+    grid-column: span 3;
+  }
+
   .box-icon-top {
     grid-column: span 3;
+  }
 
-    &:first-of-type {
-      grid-column: 2 / span 3;
-    }
+  // First article after header
+  .content_header + article {
+    grid-column: 2 / span 3;
   }
 }
