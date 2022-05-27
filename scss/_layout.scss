@@ -1,26 +1,12 @@
-.grid-container {
-  display: grid;
+.container {
   margin-inline: auto;
-
-  grid-template-columns: minmax(25px, 5vw) minmax(325px, 500px) minmax(
-      25px,
-      5vw
-    );
-
-  > * {
-    grid-column: 2;
-  }
-}
-
-.hero_img {
-  grid-row: 1;
+  width: max(82vw, 325px);
 }
 
 @include mq {
-  .grid-container {
+  .container {
     display: grid;
     width: min(100%, 1440px);
-    margin-inline: auto;
 
     grid-template-columns: minmax(1rem, 5vw) repeat(12, 1fr) minmax(1rem, 5vw);
   }

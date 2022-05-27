@@ -1,13 +1,10 @@
 .main-nav {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 65px;
 
   background-color: white;
-
-  &_logo {
-    grid-column: 2;
-    grid-row: 1 / 2;
-  }
 
   &_list {
     display: none;
@@ -18,10 +15,6 @@
   }
 
   &_toggle {
-    grid-column: 2;
-    grid-row: 1 / 2;
-    justify-self: right;
-
     width: 25px;
     height: 25px;
     padding: 0;
