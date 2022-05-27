@@ -32,8 +32,15 @@
     }
 
     &-nav {
+      padding-block: 1rem;
+      --direction: row;
+
       grid-column: 5 / 8;
       align-self: center;
+
+      ul {
+        text-align: left;
+      }
     }
 
     &_copyright {
