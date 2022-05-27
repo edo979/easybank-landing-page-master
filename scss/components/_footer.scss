@@ -12,6 +12,9 @@
   }
 
   &_copyright {
+    --direction: column;
+    --align-items: end;
+
     grid-column: 8 / end;
     justify-self: end;
     align-self: center;
