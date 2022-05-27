@@ -1,0 +1,29 @@
+.footer {
+  // Layout:
+  &_logo {
+    grid-row: 1;
+    grid-column: 2 / span 3;
+    align-self: start;
+  }
+
+  &-nav {
+    grid-column: 5 / 8;
+    align-self: center;
+  }
+
+  &_copyright {
+    grid-column: 8 / end;
+    justify-self: end;
+    align-self: center;
+  }
+}
+
+.social-icons {
+  grid-row: 1;
+  grid-column: 2 / span 3;
+  align-self: end;
+}
+
+.attribution {
+  grid-column: 1 / end;
+}
