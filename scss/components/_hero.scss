@@ -28,9 +28,12 @@
 
 @include mq {
   .hero {
+    background-color: $Very-Light-Gray;
     &_text-content {
       grid-column: 2 / 8;
       width: 100%;
+
+      margin-block: 9rem;
     }
 
     &_img {
