@@ -1,4 +1,5 @@
 .hero {
+  padding: 0;
   &_text-content {
     width: $container-width;
     margin-inline: auto;
@@ -35,6 +36,7 @@
       width: 100%;
 
       margin-block: 9rem;
+      padding: 0;
     }
 
     &_img {

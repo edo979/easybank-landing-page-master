@@ -4,11 +4,6 @@
   padding-inline: $sm-padding-inline;
 }
 
-.sm-fluid-container {
-  width: 100%;
-  padding: 0;
-}
-
 .flex {
   display: flex;
   flex-direction: var(--direction, row);

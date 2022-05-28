@@ -67,6 +67,8 @@
 
 @include mq {
   .main-nav {
+    display: grid;
+
     &_logo {
       grid-column: 2 / 5;
     }

@@ -26,7 +26,8 @@
 
 @include mq {
   .footer {
-    // Layout:
+    display: grid;
+
     &_logo {
       grid-row: 1;
       grid-column: 2 / span 3;
