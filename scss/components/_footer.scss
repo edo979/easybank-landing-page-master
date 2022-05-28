@@ -24,7 +24,15 @@
   }
 }
 
-@include mq {
+@include mq($md-bp) {
+  .footer {
+    &-nav {
+      --direction: row;
+    }
+  }
+}
+
+@include mq($lg-bp) {
   .footer {
     display: grid;
 
@@ -36,7 +44,6 @@
 
     &-nav {
       padding-block: 1rem;
-      --direction: row;
 
       grid-column: 5 / 8;
       align-self: center;

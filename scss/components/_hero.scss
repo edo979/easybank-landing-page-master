@@ -28,7 +28,7 @@
   }
 }
 
-@include mq {
+@include mq($md-bp) {
   .hero {
     background-color: $Very-Light-Gray;
     &_text-content {

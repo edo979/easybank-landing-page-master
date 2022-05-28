@@ -12,7 +12,7 @@
   gap: var(--gap, 1rem);
 }
 
-@include mq {
+@include mq($md-bp) {
   .container {
     display: grid;
     width: min(100%, 1440px);
@@ -26,16 +26,29 @@
     grid-column: 2 / 11;
   }
 
-  .box-img-top {
-    grid-column: span 3;
-  }
-
+  .box-img-top,
   .box-icon-top {
-    grid-column: span 3;
-  }
+    grid-column: span 6;
 
-  // First article after header
-  .content_header + article {
-    grid-column: 2 / span 3;
+    &:nth-child(2),
+    &:nth-child(4) {
+      grid-column: 2 / span 6;
+    }
+  }
+}
+
+@include mq($lg-bp) {
+  .box-img-top,
+  .box-icon-top {
+    grid-row: 2;
+    grid-column: span 3;
+
+    &:nth-child(2) {
+      grid-column: 2 / span 3;
+    }
+
+    &:nth-child(4) {
+      grid-column: 8 / span 3;
+    }
   }
 }

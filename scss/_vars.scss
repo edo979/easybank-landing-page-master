@@ -16,8 +16,11 @@ $White: hsl(0, 0%, 100%);
 $container-width: max(100%, 325px);
 $sm-padding-inline: max(6vw, 25px);
 
-@mixin mq {
-  @media (min-width: 768px) {
+$md-bp: 576px;
+$lg-bp: 992px;
+
+@mixin mq($bp) {
+  @media (min-width: $bp) {
     @content;
   }
 }

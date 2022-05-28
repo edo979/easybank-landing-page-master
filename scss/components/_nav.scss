@@ -65,9 +65,16 @@
   }
 }
 
-@include mq {
+@include mq($md-bp) {
+  .main-nav {
+    padding-inline: $sm-padding-inline;
+  }
+}
+
+@include mq($lg-bp) {
   .main-nav {
     display: grid;
+    padding: 0;
 
     &_logo {
       grid-column: 2 / 5;
