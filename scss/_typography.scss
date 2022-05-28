@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --fs-500: 1.05rem;
+  --fs-400: 1rem;
+  --fs-300: 0.85rem;
+}
+
 html {
   font-size: 18px;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
 }
