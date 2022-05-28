@@ -13,7 +13,8 @@ $Light-Grayish-Blue: hsl(220, 16%, 96%);
 $Very-Light-Gray: hsl(0, 0%, 98%);
 $White: hsl(0, 0%, 100%);
 
-$container-width: max(82vw, 325px);
+$container-width: max(100%, 325px);
+$sm-padding-inline: max(6vw, 25px);
 
 @mixin mq {
   @media (min-width: 768px) {

@@ -2,6 +2,7 @@
   &_text-content {
     width: $container-width;
     margin-inline: auto;
+    padding-inline: $sm-padding-inline;
   }
 
   &_img {

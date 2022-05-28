@@ -1,10 +1,12 @@
 .container {
   margin-inline: auto;
   width: $container-width;
+  padding-inline: $sm-padding-inline;
 }
 
 .sm-fluid-container {
   width: 100%;
+  padding: 0;
 }
 
 .flex {
@@ -19,6 +21,7 @@
   .container {
     display: grid;
     width: min(100%, 1440px);
+    padding: 0;
 
     grid-template-columns: minmax(1rem, 5vw) repeat(12, 1fr) minmax(1rem, 5vw);
     overflow-inline: hidden;
