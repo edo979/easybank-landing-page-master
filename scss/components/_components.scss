@@ -2,3 +2,18 @@
 @import 'hero';
 @import 'boxes';
 @import 'footer';
+
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
+.btn-primary {
+  padding: 0.6rem 1.75rem;
+  border-radius: 25px;
+
+  font-size: var(--fs-300);
+  color: $White;
+
+  background-image: linear-gradient(to left, $Bright-Cyan, $Lime-Green);
+}
