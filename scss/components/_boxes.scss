@@ -8,14 +8,14 @@
     font-size: var(--fs-500);
     line-height: 1.6;
   }
+
+  .flex {
+    margin-top: 2.75rem;
+  }
 }
 
 .box-icon-top {
   margin-bottom: 2rem;
-
-  &:first-of-type {
-    margin-top: 2.5rem;
-  }
 
   img {
     margin-inline: auto;
@@ -38,10 +38,6 @@
 }
 
 .box-img-top {
-  &:first-of-type {
-    margin-top: 1.75rem;
-  }
-
   margin-top: 1rem;
   padding-bottom: 2rem;
   border-radius: $border-radius;
@@ -75,6 +71,16 @@
   > p {
     padding-inline: 1.5rem;
   }
+
+  .flex {
+    margin-top: 1.75rem;
+  }
+}
+
+.icon-boxes,
+.img-boxes {
+  --direction: column;
+  --gap: 0;
 }
 
 @include mq($md-bp) {
@@ -86,18 +92,50 @@
     > section {
       max-width: 65ch;
     }
+
+    .flex {
+      margin-top: 3.75rem;
+    }
   }
 
-  .box-icon-top,
-  .box-icon-top:first-of-type {
-    margin-top: 4rem;
+  .img-boxes {
+    h2 {
+      text-align: left;
+    }
   }
 
   .box-icon-top {
-    margin-right: 2rem;
-
     img {
       margin: 0 0 2.5rem;
+    }
+  }
+
+  .icon-boxes,
+  .img-boxes {
+    --direction: row;
+    --gap: 0rem;
+    --justify-content: space-between;
+    --align-items: stretch;
+
+    .flex {
+      grid-column: 2 / -2;
+
+      flex-wrap: wrap;
+
+      > * {
+        flex-basis: 49%;
+      }
+    }
+  }
+}
+
+@include mq($lg-bp) {
+  .icon-boxes,
+  .img-boxes {
+    --gap: 2rem;
+
+    .flex {
+      flex-wrap: nowrap;
     }
   }
 }
