@@ -22,19 +22,53 @@
     }
   }
 }
+
 .img-boxes {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   background-color: $Very-Light-Gray;
 
-  header {
-    p {
-      font-size: 0.575rem;
-    }
-    h3 {
-      font-size: 0.9rem;
-    }
+  h2 {
+    text-align: center;
   }
 
-  p {
-    font-size: 0.725rem;
+  .box-img-top {
+    &:first-of-type {
+      margin-top: 1.75rem;
+    }
+
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    border-radius: $border-radius;
+
+    background-color: $White;
+
+    overflow: hidden;
+
+    img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    header {
+      margin-top: 1.25rem;
+      p {
+        font-size: 0.575rem;
+      }
+      h3 {
+        margin-block: 0.5rem;
+        font-size: 0.91rem;
+      }
+    }
+
+    p {
+      font-size: 0.7rem;
+    }
+
+    > header,
+    > p {
+      padding-inline: 1.5rem;
+    }
   }
 }
