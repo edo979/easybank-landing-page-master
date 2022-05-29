@@ -79,7 +79,6 @@
 
 @include mq($md-bp) {
   .icon-boxes {
-    column-gap: 2rem;
     padding-top: 6rem;
     padding-bottom: 2.5rem;
     text-align: left;
@@ -95,6 +94,8 @@
   }
 
   .box-icon-top {
+    margin-right: 2rem;
+
     img {
       margin: 0 0 2.5rem;
     }
