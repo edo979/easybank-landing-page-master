@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 :root {
-  --fs-500: 1.05rem;
-  --fs-400: 1rem;
-  --fs-300: 0.85rem;
+  --fs-900: 2.175rem;
+  --fs-800: 1.8rem;
+  --fs-600: 1.1rem;
+  --fs-500: 0.81rem;
+  --fs-400: 0.8rem;
+  --fs-300: 0.8rem;
 }
 
 html {
@@ -12,4 +15,28 @@ html {
 
 body {
   font-family: 'Public Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: $Dark-Blue;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--fs-900);
+}
+
+h2 {
+  font-size: var(--fs-800);
+}
+h3 {
+  font-size: var(--fs-600);
+  font-weight: 400;
+}
+
+p {
+  color: $Grayish-Blue;
 }

@@ -1,9 +1,16 @@
 .hero {
   padding: 0;
+
   &_text-content {
     width: $container-width;
     margin-inline: auto;
     padding-inline: $sm-padding-inline;
+
+    text-align: center;
+
+    p {
+      font-size: var(--fs-500);
+    }
   }
 
   &_img {
