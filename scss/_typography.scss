@@ -40,3 +40,13 @@ h3 {
 p {
   color: $Grayish-Blue;
 }
+
+@include mq($lg-bp) {
+  :root {
+    --fs-900: 3rem;
+    --fs-800: 2.25rem;
+    --fs-600: 1.27rem;
+    --fs-500: 1rem;
+    --fs-400: 0.9rem;
+  }
+}
