@@ -86,7 +86,7 @@
 @include mq($md-bp) {
   .icon-boxes {
     padding-top: 6rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
     text-align: left;
 
     > section {
@@ -101,6 +101,10 @@
   .img-boxes {
     h2 {
       text-align: left;
+    }
+
+    .flex {
+      margin-top: 1rem;
     }
   }
 
@@ -136,6 +140,10 @@
 
     .flex {
       flex-wrap: nowrap;
+
+      > * {
+        flex-basis: 100%;
+      }
     }
   }
 }

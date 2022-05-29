@@ -32,3 +32,9 @@
     grid-column: 2 / 11;
   }
 }
+
+@include mq($lg-bp) {
+  .container {
+    grid-template-columns: minmax(2rem, 9vw) repeat(12, 1fr) minmax(2rem, 9vw);
+  }
+}
