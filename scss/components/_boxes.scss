@@ -1,6 +1,23 @@
 .icon-boxes {
   background-color: $Light-Grayish-Blue;
+  p {
+    font-size: var(--fs-400);
+    line-height: 1.6;
+  }
 }
 .img-boxes {
   background-color: $Very-Light-Gray;
+
+  header {
+    p {
+      font-size: 0.575rem;
+    }
+    h3 {
+      font-size: 0.9rem;
+    }
+  }
+
+  p {
+    font-size: 0.725rem;
+  }
 }
