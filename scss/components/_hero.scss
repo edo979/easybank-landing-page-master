@@ -10,7 +10,7 @@
     text-align: center;
 
     p {
-      font-size: var(--fs-400);
+      font-size: var(--fs-500);
     }
   }
 
@@ -46,10 +46,12 @@
 
     &_text-content {
       grid-column: 2 / 8;
-      width: 100%;
 
-      margin-block: 9rem;
+      width: min(100%, 42ch);
+      margin: 9rem 0 5rem;
       padding: 0;
+
+      text-align: left;
     }
 
     &_img {
@@ -58,12 +60,12 @@
 
       &::after {
         position: absolute;
-        height: 750px;
+        height: 950px;
 
         background-image: url('../images/image-mockups.png'),
           url('../images/bg-intro-desktop.svg');
         background-repeat: no-repeat;
-        background-position: 120px -110px, -50px -200px;
+        background-position: 80px -120px, -50px -230px;
         background-size: cover;
       }
     }
