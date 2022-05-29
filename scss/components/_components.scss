@@ -6,6 +6,8 @@
 .btn {
   border: none;
   background-color: transparent;
+
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -16,4 +18,13 @@
   color: $White;
 
   background-image: linear-gradient(to left, $Bright-Cyan, $Lime-Green);
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(
+      to left,
+      lighten($color: $Bright-Cyan, $amount: 15%),
+      lighten($color: $Lime-Green, $amount: 15%)
+    );
+  }
 }

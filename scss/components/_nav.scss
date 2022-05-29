@@ -103,8 +103,24 @@
     }
 
     &_link {
-      color: $Grayish-Blue;
+      position: relative;
+
       font-size: var(--fs-300);
+      color: $Grayish-Blue;
+
+      &:hover,
+      &:focus {
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -29px;
+          height: 3px;
+
+          background-image: linear-gradient(to left, $Bright-Cyan, $Lime-Green);
+        }
+      }
     }
 
     &_btn {

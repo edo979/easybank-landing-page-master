@@ -5,6 +5,15 @@
 $Dark-Blue: hsl(233, 26%, 24%);
 $Lime-Green: hsl(136, 65%, 51%);
 $Bright-Cyan: hsl(192, 70%, 51%);
+$Active-color: lighten(
+  $color:
+    mix(
+      $color1: $Lime-Green,
+      $color2: $Bright-Cyan,
+      $weight: 40%,
+    ),
+  $amount: 10%,
+);
 
 //### Neutral
 

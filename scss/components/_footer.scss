@@ -27,6 +27,11 @@
       font-size: var(--fs-300);
       color: rgba($color: $White, $alpha: 0.7);
       text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $Active-color;
+      }
     }
   }
 
@@ -34,6 +39,19 @@
     --direction: column;
     --align-items: center;
     font-size: var(--fs-300);
+  }
+}
+
+.social-icons {
+  svg {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      path {
+        fill: $Active-color;
+      }
+    }
   }
 }
 
