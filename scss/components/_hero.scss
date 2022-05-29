@@ -3,6 +3,7 @@
 
   &_text-content {
     width: $container-width;
+    margin-top: 1rem;
     margin-inline: auto;
     padding-inline: $sm-padding-inline;
 
@@ -29,15 +30,20 @@
       background-image: url('../images/image-mockups.png'),
         url('../images/bg-intro-mobile.svg');
       background-repeat: no-repeat;
-      background-position: center -110px, 0px -50px;
+      background-position: center -155px, 20px -60px;
       background-size: cover;
     }
+  }
+
+  .btn {
+    margin: 2rem 0 4.5rem;
   }
 }
 
 @include mq($md-bp) {
   .hero {
     background-color: $Very-Light-Gray;
+
     &_text-content {
       grid-column: 2 / 8;
       width: 100%;

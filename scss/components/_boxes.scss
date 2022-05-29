@@ -1,8 +1,25 @@
 .icon-boxes {
+  padding-block: 3rem;
+  text-align: center;
+
   background-color: $Light-Grayish-Blue;
+
   p {
     font-size: var(--fs-400);
     line-height: 1.6;
+  }
+
+  img {
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .box-icon-top {
+    margin-bottom: 2rem;
+
+    &:first-of-type {
+      margin-top: 2.5rem;
+    }
   }
 }
 .img-boxes {
